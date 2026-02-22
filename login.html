@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titulo    </title>
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/login.css">
+    </head>
+<body>    
+        <div class="container"> 
+        
+            <div class="container-lg">
+            <div class="login">
+
+            <h2 class="title">Ingresa</h2>
+            <form id="miFormulario" action="">
+                <h2>Usuario</h2>
+                <input type="text" placeholder="Ingresa usuario">
+                <h2>Pasword</h2>
+                <input type="password" placeholder="Ingresa tu contraseña">
+                <button type="submit"class="access" id="btnEnviar" disabled> <a href="index.html">Ingresa</a></button>
+                <a href="#">Olvidaste la contraseña</a>
+                <a href="registro.html">Registrarte</a>
+            </form>
+            <script>
+                const form = document.getElementById('miFormulario');
+                const boton = document.getElementById('btnEnviar');
+                const campos = document.querySelectorAll('.requerido');
+
+                function validarFormulario() 
+                {
+                    // Verifica si todos los campos tienen valor
+                    const todosLlenos = Array.from(campos).every(campo => campo.value.trim() !== '');
+                    boton.disabled = !todosLlenos; // Habilita si todos están llenos
+                }
+
+                // Escucha cambios en los campos
+                campos.forEach(campo => {
+                    campo.addEventListener('input', validarFormulario);
+                });
+            </script>
+            </div> 
+            <div class="login-nt">
+            <h2 class="title">Iniciar sesión con Redes Sociales</h2>
+                <div class="icons">
+                    <button class="mail"><i class="fas fa-envelope"> Mail</i></button>
+                    <button class="fb"><i class="fab fa-facebook"> Facebook</i></button>
+                    <button class="tw"><i class="fab fa-twitter"> Twitter</i></button>
+                    <button class="ig"><i class="fab fa-instagram"> Instagram</i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+        <img src="img/2.jpg" alt="RUNA 1"  class="logo2">
+        <img src="img/2.jpg" alt="RUNA 1"  class="logo1">
+</body>
+</html>
