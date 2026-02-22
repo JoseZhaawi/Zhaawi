@@ -1,0 +1,243 @@
+/* ==========================================================================
+   ESTILOS GLOBALES
+   ========================================================================== */
+body {
+    /* Fuente con un toque informal y divertido */
+   font-family: 'Poppins', sans-serif;
+    background: #7A5A59; /* Fondo marrón rojizo */
+    margin: 0px;
+    padding: 0px;
+    /* Centrado absoluto del contenido en pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ==========================================================================
+   CONTENEDOR PRINCIPAL (TARJETA)
+   ========================================================================== */
+main {
+    margin: 0px;
+    background: #563131;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    width: 80vh;/* Fondo** ancho */
+    height: 71vh;
+    /* Animación de entrada al cargar */
+    animation: bounceIn 1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.container-lg{
+    margin:  10vh;
+    display: flex;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    text-align: center;
+}   
+.container-registro {
+    margin: 0px 20px;
+    width: 35vh;
+    height: 58vh;
+    background-color: #320909;
+    color: black;
+    padding: 10px 40px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0,1);
+    border-radius: 10px;
+    animation-name: border;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+/* Animación de rebote suave */
+@keyframes bounceIn {
+    0%   { transform: scale(0.8); opacity: 0; }
+    60%  { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(1); }
+}
+.logo1{
+    position: absolute;
+    top: .5vh; 
+    left: 47%;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+
+/* ==========================================================================
+   ELEMENTOS DE FORMULARIO
+   ========================================================================== */
+h1 {
+    position: absolute;
+    top: 1vh;
+    left: 25%;
+    margin: 10px;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-shadow: 2px 2px #53323b; /* Sombra para dar profundidad al título */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="password"],input[type="number"] {
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    border: none;
+    padding: 12px;
+    background-color: #563131;
+    border-color: transparent;
+    color: white;
+    border-bottom: white 2px solid;
+    font-size: 14px;
+    box-sizing: border-box; /* Asegura que el padding no desborde el ancho */
+}
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #3e4f7c;
+    
+    box-shadow: 0 0 8px #332e64;
+    outline: none;
+}
+select{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    border: none;
+    padding: 0px;
+    background-color: #563131;
+    border-color: transparent;
+    color: white;
+    border-bottom: white 2px solid;
+    font-size: 14px;
+}
+
+/* Efecto visual cuando el usuario hace clic en un input */
+
+
+/* ==========================================================================
+   BOTÓN DE REGISTRO
+   ========================================================================== */
+button.register {
+    position: absolute;
+    top: 69.5Vh;
+    left: 16vh;
+    width: 15vh;
+    padding: 14px;
+    background: #320909;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button.register a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+}
+
+button.register:hover {
+    transform: scale(1.05); /* Efecto de crecimiento al pasar el mouse */
+    background: #501212;
+}
+
+/* Enlace de recuperación o navegación al final del form */
+form a:last-of-type {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    color: darkgrey;
+    margin: 5px 0 0 0;
+}
+
+form a:last-of-type:hover {
+    text-decoration: underline;
+    font-size: 16px;
+    color: darkgrey;
+    margin: 5px 0 0 0
+}
+
+/* ==========================================================================
+   SECCIÓN SOCIAL / NOTIFICACIONES (.login-nt)
+   ========================================================================== */
+.login-nt {
+    margin: 0px 25px;
+    width: 35vh;
+    height: 58vh;
+    background-color: #320909;
+    color: black;
+    padding: 10px 40px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0,1);
+    border-radius: 10px;
+    animation-name: border;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes border2 {
+    0%   { border-radius: 0%; }
+    100% { 
+        border-top-right-radius: 20%; 
+        border-bottom-right-radius: 20%; 
+    }
+}
+
+.login-nt .title {
+    margin: 15px 0 0 0;
+    padding: 0 0 30px 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Botones genéricos dentro de la sección login-nt */
+.login-nt button {
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+    border-radius: 25px;
+    border-style: none;
+    padding: 10px; /* Padding añadido para mejor visibilidad */
+}
+
+/* Iconos dentro de los botones sociales */
+.login-nt a {
+    position: absolute;
+    top: 67.5vh;
+    left: 52vh;
+    width: 20vh;
+    padding: 14px; /* Centrado vertical exacto */
+     display: block;
+    text-decoration: none;
+    font-size: 16px;
+    color: darkgrey;
+    margin: 5px 0 0 0;
+}

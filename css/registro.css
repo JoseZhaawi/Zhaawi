@@ -1,0 +1,188 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: #7A5A59;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    background: #563131;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    width: 500px;
+    animation: bounceIn 1s ease;
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.8); opacity: 0; }
+    60% { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-size: 28px;
+    text-shadow: 2px 2px #53323b;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 2px solid #8190e4;
+    border-radius: 10px;
+    background-color: #fffaf0;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #3e4f7c;
+    box-shadow: 0 0 8px #332e64;
+    outline: none;
+}
+
+button.register {
+    width: 100%;
+    padding: 14px;
+    background: #320909;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button.register a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+}
+
+button.register:hover {
+    transform: scale(1.05);
+    background: #501212;
+}
+
+form a:last-of-type {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #619bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+form a:last-of-type:hover {
+    text-decoration: underline;
+}
+
+.login-nt{
+    width: 800px;
+    height: 750%;
+    background-color: black;
+    color: white;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    animation-name: border2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes border2{
+    0%{
+        border-radius: 0%;
+    }
+    100%{
+        border-top-right-radius: 20%;
+        border-bottom-right-radius: 20%;
+    }
+}
+
+.logo2{
+    position: center;
+    top: 180px;
+    left: 700px;
+    width: 100px;
+    height: auto;
+    border-radius: 50%; 
+}
+
+.login-nt .title{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 30px;
+    margin-top: 15px;
+}
+
+.login-nt button{
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+    border-radius: 25px;
+    border-style: none
+}
+
+.login-nt button i{
+    position: absolute;
+    left: 20px;
+    top: 10px;
+}
+
+.login-nt .Fb{
+    background-color: #3b5998;
+    color: white;
+    font-size: 18px;
+}
+
+.login-nt .Fb:hover{
+    background-color: rgba(60, 199, 241, 0.877);
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.login-nt .Tw{
+    background-color: #00acee;
+    color: white;
+    font-size: 18px;
+}
+
+.login-nt .Tw:hover{
+    background-color: rgb(rgb(43, 247, 247), rgb(30, 188, 194), rgb(35, 184, 221));
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.login-nt .Ig{
+    background-color: rgb(243, 65, 199);
+    font-size: 18px;
+}
+
+.login-nt .Ig:hover{
+    background-color: rgba(241, 109, 213, 0.8);
+    cursor: pointer;
+    text-decoration: underline;
+}
+

@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #7A5A59;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    width: 700px;
+    height: auto;
+    background-color: transparent;
+}
+.container-lg{
+    display: flex;
+    width: 700px;
+    height: auto;
+    background-color: transparent;
+}
+.login{
+    width: 500px;
+    height: 500px;
+    background-color: #563131;
+    color: black;
+    padding: 30px 40px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0,1);
+    border-radius: 10px;
+    animation-name: border;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.logo1{
+    position: absolute;
+    top: 7%; 
+    left: 58%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.logo2{   
+    position: absolute;
+    top: 7%; 
+    left: 36%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+@keyframes border {
+    0% {
+        border-radius: 0px;
+    }
+    100% {
+        border-top-left-radius: 20% ;
+        border-bottom-left-radius: 20% ;
+    }
+}
+.login .title{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 0 30% 0;
+    margin-top: 15px;
+    display: block;
+}
+
+.login h2{
+    margin: 0;
+    padding: 0;
+    color: white;
+    top: 50%;
+    margin-inline: 20px;
+    left: 20px;
+    font-weight: unset;
+    display: block;
+}
+
+.login input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    border: none;
+    background-color: #563131;
+    border-color: transparent;
+    color: white;
+    border-bottom: white 2px solid;
+    font-size: 16px;
+}
+.login button{
+    width: 100%;
+    height: 40px; 
+    margin: 10px 0;
+    border: none;
+    color:black;
+    background-color: #4d3d74;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    margin-top: 20px;
+}
+.login button a{
+    text-decoration: none;
+    color: white;
+}
+.login .access{
+    text-align: center;
+    margin-top  : 15PX;
+    align-items: center;
+    margin-top: 2px;
+    color: white;
+    background-color: #320909;
+    font-size: 18px;
+    font-weight: bold;
+}
+.login .access:hover{
+    transform: scale(1.05); /* Efecto de crecimiento al pasar el mouse */
+    background: #501212;
+
+}
+.login a{
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    color: darkgrey;
+    margin: 5px 0 0 0;
+}
+.login a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.login-nt{
+    width: 500px;
+    height: 500px;
+    background-color: #320909;
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    animation-name: border2;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+@keyframes border2 {
+    0% {
+        border-radius: 0px;
+    }
+    100% {
+        border-top-right-radius: 20% ;
+        border-bottom-right-radius: 20% ;
+    }
+}
+.login-nt .title{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    text-align: center;
+    padding: 0cm 0 30px 0;
+    margin-top: 15px;
+}
+.login-nt button{
+    width: 100%;
+    margin: 5px 0;
+    position: relative;
+    border-radius: 25px;
+    border-style: none;
+}
+.login-nt button i{
+
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+.login-nt .mail{
+    background-color: #8f1919;
+    padding: center;
+    color: white;
+    font-size: 18px;
+}
+.login-nt .mail:hover{
+    background-color: #e50909;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.login-nt .fb{
+    background-color: #3b5998;
+    color: white;
+    font-size: 18px;
+}
+.login-nt .fb:hover{
+    background-color: #1f62f3;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.login-nt .tw{
+    background-color: #00acee;
+    color: white;
+    font-size: 18px;
+}
+.login-nt .tw:hover{
+    background-color: #24c4fa;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.login-nt .ig{
+    background-color: #C13584;
+    color: white;
+    font-size: 18px;
+}
+.login-nt .ig:hover{
+    background-color: #fa0d70;
+    cursor: pointer;
+    text-decoration: underline;
+}
